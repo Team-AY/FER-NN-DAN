@@ -1,0 +1,8 @@
+tqdm==4.66.5
+pillow==10.4.0
+numpy>=1.26.0
+pandas==2.2.2
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.0+cu121
+torchvision==0.17.0
+scikit-learn==1.5.1

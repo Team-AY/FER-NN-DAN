@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 
 model_checkpoints
+#ignore fer2013 dataset files 
+fer2013/
+RAF-DB/
+models/
