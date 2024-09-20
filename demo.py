@@ -25,9 +25,9 @@ class Model():
                                     transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                     std=[0.229, 0.224, 0.225])
                                 ])
-        self.labels = ['neutral', 'happy', 'sad', 'surprise', 'fear', 'disgust', 'anger', 'contempt']
+        self.labels = ['neutral', 'happy', 'sad', 'surprise', 'fear', 'disgust', 'anger']
 
-        self.model = DAN(num_head=4, num_class=8, pretrained=False)
+        self.model = DAN(num_head=4, num_class=7, pretrained=False)
         checkpoint = torch.load('./checkpoints/affecnet8_epoch5_acc0.6209.pth',
             map_location=self.device)
         self.model.load_state_dict(checkpoint['model_state_dict'],strict=True)
