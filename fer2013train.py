@@ -26,7 +26,7 @@ eps = sys.float_info.epsilon
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--raf_path', type=str, default='datasets/raf-basic/', help='Raf-DB dataset path.')
+    parser.add_argument('--fer2013_path', type=str, default='datasets/fer2013', help='fer2013-DB dataset path.')
     parser.add_argument('--batch_size', type=int, default=256, help='Batch size.')
     parser.add_argument('--lr', type=float, default=0.1, help='Initial learning rate for sgd.')
     parser.add_argument('--workers', default=4, type=int, help='Number of data loading workers.')
@@ -37,17 +37,17 @@ def parse_args():
 
 
 class RafDataSet(data.Dataset):
-    def __init__(self, raf_path, phase, transform = None):
+    def __init__(self, fer2013_path, phase, transform = None):
         self.phase = phase
         self.transform = transform
-        self.raf_path = raf_path
+        self.fer2013_path = fer2013_path
 
-        df = pd.read_csv(os.path.join(self.raf_path, 'EmoLabel/list_patition_label.txt'), sep=' ', header=None,names=['name','label'])
+        df = pd.read_csv(os.path.join(self.fer2013_path, 'EmoLabel/ferEmoLabellist.txt'), sep=' ', header=None,names=['name','label'])
 
         if phase == 'train':
-            self.data = df[df['name'].str.startswith('train')]
+            self.data = df[df['name'].str.startswith('Train')]
         else:
-            self.data = df[df['name'].str.startswith('test')]
+            self.data = df[df['name'].str.startswith('Test')]
 
         file_names = self.data.loc[:, 'name'].values
         self.label = self.data.loc[:, 'label'].values - 1 # 0:Surprise, 1:Fear, 2:Disgust, 3:Happiness, 4:Sadness, 5:Anger, 6:Neutral
@@ -58,8 +58,8 @@ class RafDataSet(data.Dataset):
         self.file_paths = []
         for f in file_names:
             f = f.split(".")[0]
-            f = f +"_aligned.jpg"
-            path = os.path.join(self.raf_path, 'Image/aligned', f)
+            f = f +".jpg"
+            path = os.path.join(self.fer2013_path, 'images/', f)
             self.file_paths.append(path)
 
     def __len__(self):
@@ -76,7 +76,7 @@ class RafDataSet(data.Dataset):
         return image, label
 
 class AffinityLoss(nn.Module):
-    def __init__(self, device, num_class=8, feat_dim=512):
+    def __init__(self, device, num_class=7, feat_dim=512):
         super(AffinityLoss, self).__init__()
         self.num_class = num_class
         self.feat_dim = feat_dim
@@ -145,7 +145,7 @@ def run_training():
         transforms.RandomErasing(scale=(0.02,0.25)),
         ])
     
-    train_dataset = RafDataSet(args.raf_path, phase = 'train', transform = data_transforms)    
+    train_dataset = RafDataSet(args.fer2013_path, phase = 'train', transform = data_transforms)    
     
     print('Whole train set size:', train_dataset.__len__())
 
@@ -161,7 +161,7 @@ def run_training():
         transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                  std=[0.229, 0.224, 0.225])])   
 
-    val_dataset = RafDataSet(args.raf_path, phase = 'test', transform = data_transforms_val)   
+    val_dataset = RafDataSet(args.fer2013_path, phase = 'test', transform = data_transforms_val)   
 
     print('Validation set size:', val_dataset.__len__())
     
@@ -252,11 +252,11 @@ def run_training():
             tqdm.write("[Epoch %d] Validation accuracy:%.4f. bacc:%.4f. Loss:%.3f" % (epoch, acc, balanced_acc, running_loss))
             tqdm.write("best_acc:" + str(best_acc))
 
-            if acc > 0.89 and acc == best_acc:
+            if acc > 0.6 and acc == best_acc:
                 torch.save({'iter': epoch,
                             'model_state_dict': model.state_dict(),
                              'optimizer_state_dict': optimizer.state_dict(),},
-                            os.path.join('checkpoints', "rafdb_epoch"+str(epoch)+"_acc"+str(acc)+"_bacc"+str(balanced_acc)+".pth"))
+                            os.path.join('checkpoints', "fer2013_epoch"+str(epoch)+"_acc"+str(acc)+"_bacc"+str(balanced_acc)+".pth"))
                 tqdm.write('Model saved.')
 
         
