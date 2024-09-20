@@ -1,7 +1,7 @@
 import os
 # 0:Surprise, 1:Fear, 2:Disgust, 3:Happiness, 4:Sadness, 5:Anger, 6:Neutral
-dict = {"angry":5,"disgust":2,"fear":1,"happy":3,"neutral":6,"sad":4,"surprise":0}
-directory = 'datasets/fer2013'
+dict = {"angry":6,"disgust":3,"fear":2,"happy":4,"neutral":7,"sad":5,"surprise":1}
+directory = 'datasets/fer2013/base'
 
 # Open the directory and view its contents
 contents = os.listdir(directory)
