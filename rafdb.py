@@ -53,13 +53,13 @@ class RafDataSet(data.Dataset):
         self.label = self.data.loc[:, 'label'].values - 1 # 0:Surprise, 1:Fear, 2:Disgust, 3:Happiness, 4:Sadness, 5:Anger, 6:Neutral
 
         _, self.sample_counts = np.unique(self.label, return_counts=True)
-        # print(f' distribution of {phase} samples: {self.sample_counts}')
+        print(f' distribution of {phase} samples: {self.sample_counts}')
 
         self.file_paths = []
         for f in file_names:
             f = f.split(".")[0]
-            f = f +"_aligned.jpg"
-            path = os.path.join(self.raf_path, 'Image/aligned', f)
+            f = f +".jpg"
+            path = os.path.join(self.raf_path, 'Image/aligned_224', f)
             self.file_paths.append(path)
 
     def __len__(self):
