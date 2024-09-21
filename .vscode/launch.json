@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args":  ["--raf_path","datasets/RAF-DB/basic","--batch_size", "256", "--lr", "0.1","--workers", "4","--epochs","40", "--num_head", "4"]
+            "args":  ["--raf_path","datasets/RAF-DB","--batch_size", "128", "--lr", "0.1","--workers", "4","--epochs","40", "--num_head", "4"]
         }
     ]
 }

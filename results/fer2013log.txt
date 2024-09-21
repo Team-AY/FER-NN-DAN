@@ -1,0 +1,201 @@
+Whole train set size: 28709
+Validation set size: 7178
+[Epoch 1] Training accuracy: 0.5288. Loss: 2.195. LR 0.100000                                                                              
+[Epoch 1] Validation accuracy:0.6154. bacc:0.5167. Loss:1.841                                                                              
+best_acc:0.6154
+Model saved.                                                                                                                               
+[Epoch 2] Training accuracy: 0.6204. Loss: 1.783. LR 0.100000                                                                              
+[Epoch 2] Validation accuracy:0.6239. bacc:0.5397. Loss:1.730                                                                              
+best_acc:0.6239
+Model saved.                                                                                                                               
+[Epoch 3] Training accuracy: 0.6510. Loss: 1.614. LR 0.100000                                                                              
+[Epoch 3] Validation accuracy:0.6453. bacc:0.5837. Loss:1.566                                                                              
+best_acc:0.6453
+Model saved.                                                                                                                               
+[Epoch 4] Training accuracy: 0.6726. Loss: 1.484. LR 0.100000                                                                              
+[Epoch 4] Validation accuracy:0.6264. bacc:0.5684. Loss:1.582                                                                              
+best_acc:0.6453
+[Epoch 5] Training accuracy: 0.6857. Loss: 1.379. LR 0.100000                                                                              
+[Epoch 5] Validation accuracy:0.6601. bacc:0.6084. Loss:1.431                                                                              
+best_acc:0.6601
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+best_acc:0.6616
+Model saved.
+[Epoch 7] Training accuracy: 0.7116. Loss: 1.211. LR 0.100000
+[Epoch 7] Validation accuracy:0.6643. bacc:0.6314. Loss:1.352
+best_acc:0.6643
+Model saved.
+ 18%|█████████████████▎                                                                                 | 7/40 [41:20<2:52:43, 314.05s/it] 
+
+
+
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+best_acc:0.6616
+Model saved.
+[Epoch 7] Training accuracy: 0.7116. Loss: 1.211. LR 0.100000
+[Epoch 7] Validation accuracy:0.6643. bacc:0.6314. Loss:1.352
+best_acc:0.6643
+Model saved.
+ 18%|█████████████████▎                                                                                 | 7/40 [41:20<2:52:43, 314.05s/it] 
+
+
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+best_acc:0.6616
+Model saved.
+[Epoch 7] Training accuracy: 0.7116. Loss: 1.211. LR 0.100000
+[Epoch 7] Validation accuracy:0.6643. bacc:0.6314. Loss:1.352
+best_acc:0.6643
+Model saved.
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+best_acc:0.6616
+Model saved.
+[Epoch 7] Training accuracy: 0.7116. Loss: 1.211. LR 0.100000
+[Epoch 7] Validation accuracy:0.6643. bacc:0.6314. Loss:1.352
+best_acc:0.6643
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+best_acc:0.6616
+Model saved.
+[Epoch 7] Training accuracy: 0.7116. Loss: 1.211. LR 0.100000
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+best_acc:0.6616
+Model saved.
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+Model saved.
+Model saved.
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+Model saved.
+[Epoch 6] Training accuracy: 0.7023. Loss: 1.284. LR 0.100000
+[Epoch 6] Validation accuracy:0.6616. bacc:0.6202. Loss:1.391
+best_acc:0.6616
+Model saved.
+[Epoch 7] Training accuracy: 0.7116. Loss: 1.211. LR 0.100000
+[Epoch 7] Validation accuracy:0.6643. bacc:0.6314. Loss:1.352
+best_acc:0.6643
+Model saved.
+[Epoch 8] Training accuracy: 0.7247. Loss: 1.127. LR 0.100000                                                                              
+[Epoch 8] Validation accuracy:0.6379. bacc:0.6129. Loss:1.396
+best_acc:0.6643
+[Epoch 9] Training accuracy: 0.7381. Loss: 1.052. LR 0.100000                                                                              
+[Epoch 9] Validation accuracy:0.6567. bacc:0.6071. Loss:1.317                                                                              
+best_acc:0.6643
+[Epoch 10] Training accuracy: 0.7493. Loss: 0.984. LR 0.100000                                                                             
+[Epoch 10] Validation accuracy:0.6452. bacc:0.5811. Loss:1.423                                                                             
+best_acc:0.6643
+[Epoch 11] Training accuracy: 0.8062. Loss: 0.807. LR 0.010000                                                                             
+[Epoch 11] Validation accuracy:0.7019. bacc:0.6733. Loss:1.151                                                                             
+best_acc:0.7019
+Model saved.                                                                                                                               
+[Epoch 12] Training accuracy: 0.8375. Loss: 0.717. LR 0.010000                                                                             
+[Epoch 12] Validation accuracy:0.7024. bacc:0.6741. Loss:1.172                                                                             
+best_acc:0.7024
+Model saved.                                                                                                                               
+[Epoch 13] Training accuracy: 0.8485. Loss: 0.678. LR 0.010000                                                                             
+[Epoch 13] Validation accuracy:0.7058. bacc:0.6824. Loss:1.179                                                                             
+best_acc:0.7058
+Model saved.                                                                                                                               
+[Epoch 14] Training accuracy: 0.8653. Loss: 0.633. LR 0.010000                                                                             
+[Epoch 14] Validation accuracy:0.7066. bacc:0.6813. Loss:1.191                                                                             
+best_acc:0.7066
+Model saved.                                                                                                                               
+[Epoch 15] Training accuracy: 0.8720. Loss: 0.604. LR 0.010000                                                                             
+[Epoch 15] Validation accuracy:0.7053. bacc:0.6814. Loss:1.214                                                                             
+best_acc:0.7066
+[Epoch 16] Training accuracy: 0.8830. Loss: 0.572. LR 0.010000                                                                             
+[Epoch 16] Validation accuracy:0.7033. bacc:0.6817. Loss:1.246                                                                             
+best_acc:0.7066
+[Epoch 17] Training accuracy: 0.8891. Loss: 0.551. LR 0.010000                                                                             
+[Epoch 17] Validation accuracy:0.7028. bacc:0.6850. Loss:1.277                                                                             
+best_acc:0.7066
+[Epoch 18] Training accuracy: 0.8950. Loss: 0.528. LR 0.010000                                                                             
+[Epoch 18] Validation accuracy:0.7044. bacc:0.6873. Loss:1.274                                                                             
+best_acc:0.7066
+[Epoch 19] Training accuracy: 0.8981. Loss: 0.512. LR 0.010000
+[Epoch 19] Validation accuracy:0.7086. bacc:0.6901. Loss:1.291
+best_acc:0.7086
+Model saved.
+[Epoch 20] Training accuracy: 0.9054. Loss: 0.491. LR 0.010000
+[Epoch 20] Validation accuracy:0.7087. bacc:0.6891. Loss:1.306
+best_acc:0.7087
+Model saved.
+[Epoch 21] Training accuracy: 0.9131. Loss: 0.468. LR 0.001000
+[Epoch 21] Validation accuracy:0.7112. bacc:0.6915. Loss:1.292                                                                             
+best_acc:0.7112
+Model saved.                                                                                                                               
+[Epoch 22] Training accuracy: 0.9173. Loss: 0.456. LR 0.001000                                                                             
+[Epoch 22] Validation accuracy:0.7099. bacc:0.6907. Loss:1.290                                                                             
+best_acc:0.7112
+[Epoch 23] Training accuracy: 0.9159. Loss: 0.457. LR 0.001000                                                                             
+[Epoch 23] Validation accuracy:0.7126. bacc:0.6901. Loss:1.282                                                                             
+best_acc:0.7126
+Model saved.                                                                                                                               
+[Epoch 24] Training accuracy: 0.9182. Loss: 0.452. LR 0.001000                                                                             
+[Epoch 24] Validation accuracy:0.7143. bacc:0.6935. Loss:1.296                                                                             
+best_acc:0.7143
+Model saved.                                                                                                                               
+[Epoch 25] Training accuracy: 0.9176. Loss: 0.450. LR 0.001000                                                                             
+[Epoch 25] Validation accuracy:0.7126. bacc:0.6919. Loss:1.302                                                                             
+best_acc:0.7143
+[Epoch 26] Training accuracy: 0.9195. Loss: 0.439. LR 0.001000                                                                             
+[Epoch 26] Validation accuracy:0.7115. bacc:0.6917. Loss:1.296                                                                             
+best_acc:0.7143
+[Epoch 27] Training accuracy: 0.9217. Loss: 0.440. LR 0.001000                                                                             
+[Epoch 27] Validation accuracy:0.7116. bacc:0.6908. Loss:1.309                                                                             
+best_acc:0.7143
+[Epoch 28] Training accuracy: 0.9173. Loss: 0.446. LR 0.001000                                                                             
+[Epoch 28] Validation accuracy:0.7104. bacc:0.6903. Loss:1.300                                                                             
+best_acc:0.7143
+[Epoch 29] Training accuracy: 0.9203. Loss: 0.445. LR 0.001000                                                                             
+[Epoch 29] Validation accuracy:0.7095. bacc:0.6907. Loss:1.303                                                                             
+best_acc:0.7143
+[Epoch 30] Training accuracy: 0.9224. Loss: 0.430. LR 0.001000                                                                             
+[Epoch 30] Validation accuracy:0.7098. bacc:0.6883. Loss:1.304                                                                             
+best_acc:0.7143
+[Epoch 31] Training accuracy: 0.9219. Loss: 0.433. LR 0.000100                                                                             
+[Epoch 31] Validation accuracy:0.7094. bacc:0.6907. Loss:1.308                                                                             
+best_acc:0.7143
+[Epoch 32] Training accuracy: 0.9241. Loss: 0.428. LR 0.000100                                                                             
+[Epoch 32] Validation accuracy:0.7084. bacc:0.6875. Loss:1.309                                                                             
+best_acc:0.7143
+[Epoch 33] Training accuracy: 0.9230. Loss: 0.430. LR 0.000100                                                                             
+[Epoch 33] Validation accuracy:0.7093. bacc:0.6900. Loss:1.299                                                                             
+best_acc:0.7143
+[Epoch 34] Training accuracy: 0.9221. Loss: 0.433. LR 0.000100                                                                             
+[Epoch 34] Validation accuracy:0.7112. bacc:0.6905. Loss:1.302                                                                             
+best_acc:0.7143
+[Epoch 35] Training accuracy: 0.9196. Loss: 0.438. LR 0.000100                                                                             
+[Epoch 35] Validation accuracy:0.7076. bacc:0.6879. Loss:1.312                                                                             
+best_acc:0.7143
+[Epoch 36] Training accuracy: 0.9213. Loss: 0.431. LR 0.000100                                                                             
+[Epoch 36] Validation accuracy:0.7074. bacc:0.6871. Loss:1.309                                                                             
+best_acc:0.7143
+[Epoch 37] Training accuracy: 0.9235. Loss: 0.427. LR 0.000100                                                                             
+[Epoch 37] Validation accuracy:0.7094. bacc:0.6887. Loss:1.310                                                                             
+best_acc:0.7143
+[Epoch 38] Training accuracy: 0.9251. Loss: 0.426. LR 0.000100                                                                             
+[Epoch 38] Validation accuracy:0.7127. bacc:0.6906. Loss:1.312                                                                             
+best_acc:0.7143
+[Epoch 39] Training accuracy: 0.9228. Loss: 0.433. LR 0.000100                                                                             
+[Epoch 39] Validation accuracy:0.7098. bacc:0.6919. Loss:1.310                                                                             
+best_acc:0.7143
+[Epoch 40] Training accuracy: 0.9221. Loss: 0.427. LR 0.000100                                                                             
+[Epoch 40] Validation accuracy:0.7077. bacc:0.6859. Loss:1.304                                                                             
+best_acc:0.7143
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 40/40 [3:15:23<00:00, 293.09s/it]
