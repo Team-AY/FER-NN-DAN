@@ -166,4 +166,4 @@ RAF-DB/
 models/
 checkpoints/
 
-results/*.pth
+results/
